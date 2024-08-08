@@ -26,6 +26,7 @@
         {% for book in books %}
             <li>Title: {{ book.title }}, Author: {{ book.author }}, Price: ${{ book.price }}, Stock: {{ book.stock }}</li>
         {% endfor %}
+        <button><a href="{{ url_for('about') }}">Enter</a></button>
     </ul>
 </body>
 </html>

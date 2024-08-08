@@ -26,6 +26,11 @@ def index():
     return render_template('book.html', books=books)
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
 @app.route('/add_book', methods=['POST'])
 def add_book():
     title = request.form['title']
